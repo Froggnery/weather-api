@@ -20,6 +20,11 @@ const mainNavItems: NavItem[] = [
     {
         title: 'Dashboard',
         href: dashboard(),
+        icon: LayoutGrid,   
+    },
+     {
+        title: 'Weather',
+        href: dashboard(),
         icon: LayoutGrid,
     },
 ];

@@ -38,10 +38,11 @@ import AppLogoIcon from './app-logo-icon';
 
 const mainNavItems: NavItem[] = [
     {
-        title: 'Dashboard',
+        title: 'Home',
         href: dashboard(),
         icon: LayoutGrid,
     },
+   
 ];
 
 const rightNavItems: NavItem[] = [
