@@ -45,6 +45,9 @@ export default function Weather() {
                 <div className="flex h-50 rounded-2xl bg-blue-300"></div>
                 <div className="flex h-50 rounded-2xl bg-blue-300"></div>
             </div>
+            <div>
+                <button>Test Button</button>
+            </div>
         </div>
     );
 }
