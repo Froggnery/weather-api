@@ -19,7 +19,7 @@ export default function Weather() {
                 setData(response.data);
                 console.log(response.data);
             });
-            setlocation("");
+            setlocation('');
         }
     };
     const API_KEY = 'd0e2a10085bc9611e4ac4c6b4ad60aa9';
@@ -27,20 +27,24 @@ export default function Weather() {
 
     return (
         <div className="relative h-full w-full bg-gradient-to-b from-blue-300 to-white py-2">
-            <div className="p-4 text-center">
+            <div className="flex p-4 text-center justify-center">
                 <input
                     type="text"
-                    className="bg-white-600/100 w-[700px] rounded-3xl border-1 px-6 py-3 text-lg shadow-md placeholder:text-gray-400 focus:outline-none"
+                    className="w-[1000px] bg-white-600/100  rounded-3xl border-1 px-6 py-3 text-lg shadow-md placeholder:text-gray-400 focus:outline-none"
                     placeholder="Enter location"
                     value={location}
                     onChange={(e) => setlocation(e.target.value)}
                     onKeyDownCapture={searchLocation}
                 />
             </div>
-             <div className='w-[500px] h-[500px] border-2 rounded-lg a bg-white shadow-lg mx-auto mt-10 relattive'> 
-     
+            <div className="grid h-full w-full grid-cols-4 gap-2 rounded-lg bg-white p-2">
+                <div className="flex h-50 rounded-2xl bg-blue-300"></div>
+                <div className="flex h-50 rounded-2xl bg-blue-300"></div>
+                <div className="flex h-50 rounded-2xl bg-blue-300"></div>
+                <div className="flex h-50 rounded-2xl bg-blue-300"></div>
+                <div className="flex h-50 rounded-2xl bg-blue-300"></div>
+                <div className="flex h-50 rounded-2xl bg-blue-300"></div>
             </div>
         </div>
-        
     );
 }
